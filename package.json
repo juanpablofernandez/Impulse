@@ -1,0 +1,19 @@
+{
+  "name": "impulse",
+  "version": "1.0.0",
+  "description": "Impulse bot",
+  "main": "src/main.js",
+  "author": "Juan Pablo Fernandez",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "nodemon src/main.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "dotenv": "^6.0.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
