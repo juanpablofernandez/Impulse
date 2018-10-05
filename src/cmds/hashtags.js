@@ -4,13 +4,16 @@ const HashtagManager = require('../helpers/hashtagManager.js');
 
 module.exports.run = async (bot, message, args) => {
     let tag = args[0];
-
+    let dots = ``
+    if(args[1] === `dots` || `d`) {
+        dots = `•\n•\n•\n•\n•\n`
+    }
+    console.log(dots);
     HashtagManager.getTags(tag, (tags) => {
-        console.log(tags);
-        message.channel.send(`\`\`\`${tags}\`\`\``);
+        message.channel.send(`${dots}${tags}`);
     });
 }
 
 module.exports.help = {
-    names: ["tags", "hashtags"],
+    names: ["tags", "hashtags", "tag"],
 }
