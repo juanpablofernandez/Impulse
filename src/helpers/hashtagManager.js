@@ -1,5 +1,5 @@
 const request = require('request');
-const rp = require('request-promise');
+const rp = require('request-promise-native');
 
 
 let getTags = async (tags, sort, limit) => {
